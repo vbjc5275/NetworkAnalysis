@@ -116,7 +116,7 @@ def betweenness_centrality(user_shortest_paths):
                                    in users}
     return user_betweenness_centrality
         
-users = construct_user_friends(friendships)
+users = construct_users_friends(friendships)
 #shortest_paths_from("郭靖",users)
 user_shortest_paths = {}
 for from_user in users:
