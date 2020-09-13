@@ -53,7 +53,7 @@ def construct_users_friends(friendships):
         key:userId
         value:friends list
     """
-    user = defaultdict(list)
+    users = defaultdict(list)
     for friendship in friendships:
         user_id, friend_id = friendship
         users[user_id].append(friend_id)
